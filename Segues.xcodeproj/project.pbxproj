@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F44B81C722E5A11F00D422D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B81C622E5A11F00D422D1 /* AppDelegate.swift */; };
-		F44B81C922E5A11F00D422D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B81C822E5A11F00D422D1 /* ViewController.swift */; };
 		F44B81CC22E5A11F00D422D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44B81CA22E5A11F00D422D1 /* Main.storyboard */; };
 		F44B81CE22E5A12000D422D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44B81CD22E5A12000D422D1 /* Assets.xcassets */; };
 		F44B81D122E5A12000D422D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44B81CF22E5A12000D422D1 /* LaunchScreen.storyboard */; };
-		F44B81DC22E5A12000D422D1 /* SeguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B81DB22E5A12000D422D1 /* SeguesTests.swift */; };
+		F44B81E722E5A19C00D422D1 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B81E622E5A19C00D422D1 /* SegueViewController.swift */; };
+		F44B81E922E5A1CF00D422D1 /* SegueViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B81E822E5A1CF00D422D1 /* SegueViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		F44B81C322E5A11F00D422D1 /* Segues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Segues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44B81C622E5A11F00D422D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F44B81C822E5A11F00D422D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F44B81CB22E5A11F00D422D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44B81CD22E5A12000D422D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44B81D022E5A12000D422D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44B81D222E5A12000D422D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44B81D722E5A12000D422D1 /* SeguesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeguesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F44B81DB22E5A12000D422D1 /* SeguesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguesTests.swift; sourceTree = "<group>"; };
 		F44B81DD22E5A12000D422D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44B81E622E5A19C00D422D1 /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		F44B81E822E5A1CF00D422D1 /* SegueViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F44B81C622E5A11F00D422D1 /* AppDelegate.swift */,
-				F44B81C822E5A11F00D422D1 /* ViewController.swift */,
+				F44B81E622E5A19C00D422D1 /* SegueViewController.swift */,
 				F44B81CA22E5A11F00D422D1 /* Main.storyboard */,
 				F44B81CD22E5A12000D422D1 /* Assets.xcassets */,
 				F44B81CF22E5A12000D422D1 /* LaunchScreen.storyboard */,
@@ -90,7 +90,7 @@
 		F44B81DA22E5A12000D422D1 /* SeguesTests */ = {
 			isa = PBXGroup;
 			children = (
-				F44B81DB22E5A12000D422D1 /* SeguesTests.swift */,
+				F44B81E822E5A1CF00D422D1 /* SegueViewControllerTests.swift */,
 				F44B81DD22E5A12000D422D1 /* Info.plist */,
 			);
 			path = SeguesTests;
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44B81C922E5A11F00D422D1 /* ViewController.swift in Sources */,
+				F44B81E722E5A19C00D422D1 /* SegueViewController.swift in Sources */,
 				F44B81C722E5A11F00D422D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44B81DC22E5A12000D422D1 /* SeguesTests.swift in Sources */,
+				F44B81E922E5A1CF00D422D1 /* SegueViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,4 +9,6 @@
 import UIKit
 
 class SegueViewController: UIViewController {
+
+    @IBOutlet private(set) weak var showSegueButton: UIButton!
 }

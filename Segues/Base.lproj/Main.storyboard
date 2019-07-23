@@ -13,13 +13,26 @@
         <!--Segue View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SegueViewController" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SegueViewController" id="BYZ-38-t0r" customClass="SegueViewController" customModule="Segues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9b-Ad-l1c">
+                                <rect key="frame" x="164" y="438" width="86" height="30"/>
+                                <state key="normal" title="Show Segue"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h9b-Ad-l1c" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1Gc-IV-PHW"/>
+                            <constraint firstItem="h9b-Ad-l1c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HwE-dQ-bZe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="showSegueButton" destination="h9b-Ad-l1c" id="E1c-so-ra4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

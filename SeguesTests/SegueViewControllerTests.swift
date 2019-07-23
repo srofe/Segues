@@ -7,10 +7,14 @@
 //
 
 import XCTest
+@testable import Segues
 
 class SegueViewControllerTests: XCTestCase {
 
-    func test_zero() {
-        XCTFail("Initial failing test for SegueViewController.")
+    func test_viewController_hasAButton() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let sut = storyboard.instantiateViewController(withIdentifier: "SegueViewController") as! SegueViewController
+        sut.loadViewIfNeeded()
+        XCTAssertNotNil(sut.showSegueButton, "The view controller shall have a button for show segue.")
     }
 }
